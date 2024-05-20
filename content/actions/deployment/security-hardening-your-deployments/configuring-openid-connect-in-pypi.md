@@ -68,7 +68,7 @@ jobs:
       - name: build release distributions
         run: |
           # NOTE: put your own distribution build steps here.
-          python -m build
+          pipx run build
 
       - name: upload windows dists
         uses: {% data reusables.actions.action-upload-artifact %}
